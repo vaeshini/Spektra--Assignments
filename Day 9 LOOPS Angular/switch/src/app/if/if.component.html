@@ -1,0 +1,21 @@
+<h2>List of countries</h2>
+<p>Select a country</p>
+<select [(ngModel)]="selectedCountry">
+  <option *ngFor="let country of countries" [value]="country">{{ country }}</option>
+</select>
+<div [ngSwitch]="selectedCountry">
+  <div *ngSwitchCase="'India'">
+    <p>You have selected India</p>
+  </div>
+  <div *ngSwitchCase="'US'">
+    <p>You have selected US</p>
+  </div>
+  <div *ngSwitchCase="'UK'">
+    <p>You have selected UK</p>
+  </div>
+  <div *ngSwitchCase="'Canada'">
+    <p>You have selected Canada</p>
+  </div>
+  <div *ngSwitchDefault>
+  </div>
+</div>

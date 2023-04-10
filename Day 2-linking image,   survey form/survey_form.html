@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html >
+  
+<head>
+    
+    <style>
+ 
+        form {
+     
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+        }
+
+           form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+ 
+       
+        form-control input,
+        form-control select,
+        form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+ 
+        form-control input[type="radio"],
+        form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+                
+        
+    </style>
+</head>
+  
+<body>
+<center>
+    <h1>STUDENT SURVEY FORM</h1>
+  </center>
+    
+    <form id="form">
+ 
+      
+        <div class="form-control">
+            <h4 >
+                Name
+            </h4>
+ 
+      
+            <input type="text"
+                
+                   placeholder="Enter your name" />
+        </div>
+  
+        <div class="form-control">
+            <h4>
+                Email
+            </h4>
+            <input type="email"
+               
+                   placeholder="Enter your email" />
+        </div>
+  
+        <div class="form-control">
+            <h4 >
+                Age
+            </h4>
+ 
+         
+            <input type="text"
+                  
+                   placeholder="Enter your age" />
+        </div><br>
+     <div>
+<h4>Date of Birth</h4>
+    <input type="date" value="0000-00-0" />
+        <div class="form-control">
+            <h4>
+                Position
+            </h4>
+             
+        
+            <select name="role">
+                <option value="Data Analyst">Data Analyst</option>
+                <option value="Software developer">Software developer</option>
+                <option value="Tester">Tester</option>
+            </select>
+        </div>
+  
+        <div class="form-control">
+            <h4>
+                Highest Education 
+            </h4>
+ 
+    
+                <input type="radio"
+                     
+                       name="recommed">Degree</input>
+            </label><br><br>
+            
+                <input type="radio"
+                       
+                       name="recommed">Masters</input>
+            </label><br><br>
+            
+                <input type="radio"
+                      
+                       name="recommed">PHD</input>
+            </label>
+        </div>
+  
+        
+            
+            <h4>Skills you may know</h4>
+        
+            </h4>
+            
+            <label>
+                <input type="checkbox">C</input></label><br><br>
+            <label>
+                <input type="checkbox">C++</input></label><br><br>
+            <label>
+                <input type="checkbox">C#</input></label><br><br>
+            <label>
+                <input type="checkbox">Java</input></label><br><br>
+            <label>
+                <input type="checkbox">Python</input></label><br><br>
+            <label>
+                <input type="checkbox">Data Structures</input></label><br><br>
+            <label>
+                <input type="checkbox">NodeJS</input></label><br><br>
+            <label>
+                <input type="checkbox">DBMS</input></label>
+     
+        </div>
+  
+     
+          
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+            </textarea>
+        </div><br>
+  
+   <center>
+        <button type="submit" value="submit">
+            Submit
+        </button>
+</center>
+    </form>
+</body>
+</html>

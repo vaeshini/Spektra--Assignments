@@ -1,0 +1,13 @@
+<h2>If loop </h2>
+<input type="radio" name="option" value="valid" (click)="onSelect('valid')">valid <br>
+<input type="radio" name="option" value="invalid" (click)="onSelect('invalid')">invalid <br>
+<div>
+    <div *ngIf = "selectedOption === 'valid'">
+        <p>Valid</p>
+    </div>
+
+    <div *ngIf = "selectedOption === 'invalid'">
+        <p>invalid</p>
+    </div>
+
+</div>

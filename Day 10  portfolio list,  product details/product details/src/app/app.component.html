@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>home</title>
+  <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/carousel/">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+</head>
+
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img id="logo1" > Sports Gallery</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto mb-2 mb-md-0">
+           
+            <li class="nav-item" >
+              <a class="nav-link " href="#product">Products</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#about">About US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="#contact">Contact Us</a>
+              </li>
+              
+          </ul>
+          <form class="d-flex">
+            <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Sports Items</h1>
+<h3>Accessories</h3>
+    
+    <!-- Marketing messaging and featurettes
+  ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing" id="product">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        
+        <div class="col-lg-4">
+            <img  id="rcb" src="https://shop.teamsg.in/wp-content/uploads/2020/09/BOUNCER_1-300x300.webp" alt="">
+  
+            <h2>Cark Ball</h2>
+            <p>A cricket ball is a hard, solid ball used to play cricket. A cricket ball consists of a cork 
+                core wound with string then a leather cover stitched on, and manufacture is regulated by cricket law at first-class level. </p>
+                <button (click)="getproduct1()">view details &raquo;</button>
+            <!-- <p><a class="btn btn-secondary" [routerLink]="['/product1link']" product1 role="button">View details &raquo;</a></p> -->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img  id="rcb" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTup9qXo-KUqcw1YwxbX0HPBuFFbHG-Y4IuKw&usqp=CAU" alt="">
+  
+            <h2>Sports Shoes</h2>
+            <p> Cricket spikes are a type of shoe worn by most professional cricketers.These shoes have a sharp piece of metal at the sole. 
+                 Usually, spikes are worn on turf or cricket fields with.
+                And Signed by AB. </p>
+                <button (click)="getproduct2()" >view details &raquo;</button>
+            <!-- <p><a class="btn btn-secondary" [routerLink]="['/product2link']" product2 role="button">View details &raquo;</a></p> -->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img  id="rcb" src="https://www.bigvalueshop.com/wp-content/uploads/2019/10/MRF-ABD-17-Shoulder-Kit-Bag.jpeg" alt="">
+  
+            <h2>Cricket Kit</h2>
+            <p>A comprehensive kit for boys under 15 years of age ,comprises of a wheel bag ,
+                 bat, a pair of leg guards, a pair of batting gloves, thigh guard, abdomen guard, forearm guard, helmet and a cap </p>
+                 <button (click)="getproduct3()">view details &raquo;</button>
+            <!-- <p><a class="btn btn-secondary" [routerLink]="['/product3link']" product3 role="button">View details &raquo;</a></p> -->
+          </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+      <div>
+        <router-outlet></router-outlet>
+      </div>
+      <hr class="featurette-divider" id="about">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+           <h2 class="featurette-heading">About US <!--<span class="text-muted">It’ll blow your mind.</span> -->
+          </h2>
+          <p class="lead">Our website is a family-owned business that has been serving 
+            quality products for over 10 years. We pride ourselves on using only the best products,with a premium quality and with customer reviews of 4.5 stars.</p>
+        </div>
+        <div class="col-md-5">
+          
+
+        </div>
+      </div>
+
+      <hr class="featurette-divider" id="contact">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Contact Us On </h2>
+          <a href="#" class="fa fa-instagram"><img id="icon" src="https://cdn.freebiesupply.com/images/large/2x/instagram-icon-white-on-black-circle.png" alt=""></a>
+          <a href="#" class="fa fa-facebook"><img id="icon" src="https://cdn-icons-png.flaticon.com/512/20/20673.png" alt=""></a>
+          <a href="#" class="fa fa-twitter"><img id="icon" src="https://cdn-icons-png.flaticon.com/512/81/81609.png" alt=""></a>
+        </div>
+        <div class="col-md-5 order-md-1">
+          
+        </div>
+      </div>
+
+    <!-- FOOTER -->
+    <hr class="featurette-divider">
+    <footer class="container">
+      <p><a class="btn btn-lg btn-primary float-right"  href="#" role="button">Back to top</a></p>
+      <p>&copy; 2023 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+    </div>
+  
+  
+</main>
+
+</body>
+
+</html>
+

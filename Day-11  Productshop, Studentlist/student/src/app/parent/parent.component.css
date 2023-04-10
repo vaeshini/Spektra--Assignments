@@ -1,0 +1,86 @@
+  form {
+     flex-direction: column;    
+     align-items: flex-start; 
+    margin-bottom: 1rem;
+  } 
+   
+  div {
+    display: flex;
+      flex-direction: column; 
+     margin-bottom: 0.5rem; 
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="number"],
+  select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+  }
+  
+  
+  table {
+    border-collapse: collapse;
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+  
+  
+  
+  th,
+  td {
+    padding: 0.5rem;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+  
+  th {
+    font-weight: bold;
+  }
+  
+  form {
+     
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+   form-control label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+form-control input,
+form-control select,
+form-control textarea {
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
+
+form-control input[type="radio"],
+form-control input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+table.a {
+  table-layout: auto;
+  width: 180px;
+}
+
+table.b {
+  table-layout: fixed;
+  width: 180px;
+}

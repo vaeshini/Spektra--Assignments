@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>upload an image</title>
+    
+    
+  <style>
+     button[type="button"]:hover {
+    background-color: #3E8E41;
+  }
+  
+  #like-button {
+    font-size: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  #like-button:hover {
+    background-color: #b06620;
+  }
+  h1 {
+    text-align: center;
+  }
+  
+  /* Style the form */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+  }
+  #comment-section {
+    margin: 20px;
+  }
+  
+  #comment-section > div {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  </style>
+  </head>
+  <body>
+    <body background="C:\Users\HP\OneDrive - Spektra Systems LLC\Desktop\Day6 ,7-Ecommerce     photogra[hy\photography\img1.jpeg">
+    <h1 style="color:white">upload an image</h1>
+    <form>
+      <label for="image-input" style="color:white">Upload Image:</label>
+      <input type="file" id="image-input" accept="image/*"><br>
+      <img id="image-preview" src="" style="max-width: 720px; max-height: 720px;"><br>
+
+    <script>
+      function readImage(input) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+          reader.onload = function(e) {
+            document.getElementById("image-preview").src = e.target.result;
+          }
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+      document.getElementById("image-input").addEventListener("change", function() {
+        readImage(this);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Validation Form</title>
+	<script type="text/javascript">
+		function validateForm() {
+
+			var name = document.forms["myForm"]["name"].value;
+			var age = document.forms["myForm"]["age"].value;
+			var email = document.forms["myForm"]["email"].value;
+			var phone = document.forms["myForm"]["phone"].value;
+			var password = document.forms["myForm"]["password"].value;
+			var gender = document.forms["myForm"]["gender"].value;
+			
+			
+			if (name == "" || age == "" || email == "" || phone == "" || password == "" || gender == "") {
+				alert("All fields must be filled out");
+				return false;
+			}
+			
+			
+			if (isNaN(age)) {
+				alert("Age must be a number");
+				return false;
+			}
+			
+			
+			if (isNaN(phone)) {
+				alert("Phone number must be a number");
+				return false;
+			}
+			
+			
+			if (password.length < 8) {
+				alert("Password must be at least 8 characters long");
+				return false;
+			}
+			
+			
+			var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+			if (!emailRegex.test(email)) {
+				alert("Email must be in correct format");
+				return false;
+			}
+			
+			// If all checks pass, submit form
+			return true;
+		}
+	</script>
+</head>
+<body>
+	<form name="myForm" onsubmit="return validateForm()">
+                 <h1>Validation form</h1>
+		<label for="name">Name:</label>
+		<input type="text" name="name"><br><br>
+		
+		<label for="age">Age:</label>
+		<input type="text" name="age"><br><br>
+		
+		<label for="email">Email:</label>
+		<input type="text" name="email"><br><br>
+				
+		<label for="phone">Phone Number:</label>
+		<input type="text" name="phone"><br><br>
+				
+		<label for="password">Password:</label>
+		<input type="password" name="password"><br><br>
+		
+		<label for="gender">Gender:</label>
+		<input type="radio" name="gender" value="male">Male
+		<input type="radio" name="gender" value="female">Female<br><br>
+		
+		<input type="submit" value="Submit">
+	</form

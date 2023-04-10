@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Freelancer Portfolio</title>
+	<!-- <link rel="stylesheet" type="text/css" href="Mycss2.css"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<style>
+
+	#frd{
+		border-radius: 50%;
+		height: 35%;
+		width: 30%;
+	}
+			.jumbotron {
+			/*background-image:"back.jpeg";*/
+			/*background-size: cover;*/
+			height: 400px;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			color: black;
+			margin-bottom: 0;
+		}
+		.jumbotron h1 {
+			font-size: 50px;
+			font-weight: bold;
+			margin-bottom: 20px;
+			text-shadow: 2px 2px #333;
+		}
+		.jumbotron p {
+			font-size: 24px;
+			margin-bottom: 30px;
+			/*text-shadow: 2px 2px #333;*/
+		}
+		.footer {
+			background-color: #333;
+			color: white;
+			padding: 20px;
+			text-align: center;
+		}
+		.footer a {
+			color: white;
+		}
+		#price{
+			background-image:url("price.jpeg");
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-position: center center;
+			background-clip: content-box;
+  			
+		}
+		
+	</style>
+</head>
+<body background="https://c4.wallpaperflare.com/wallpaper/128/424/55/dota-2-art-background-clean-wallpaper-preview.jpg" style="background-size: cover; background-repeat: no-repeat; ">
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+	<div class="container">
+		<a class="navbar-brand" href="#Home">Likhitha</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#Home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#portfolio">Portfolio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#testimonials">Testimonials</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+	<div class="jumbotron" id="price">
+		<h1>Welcome to my portfolio!</h1>
+		<p>Here you can find my latest projects and learn more about me.</p>
+		<a href="#portfolio" class="btn btn-primary btn-lg">View Portfolio</a>
+	</div>
+
+<section id="portfolio">
+	<header>
+		<h1>Likhitha</h1>
+		<h2>Software Developer</h2>
+		<img src="Ayan.jpg" alt="My Photo">
+	</header>
+
+	<section>
+		<h3>Skills</h3>
+		<ul>
+			<li>HTML5</li>
+			<li>Java</li>
+			<li>Python</li>
+			<li>SQL</li>
+			<li>Cloud</li>
+		</ul>
+	</section>
+
+<section>
+		<h3>Interests</h3>
+		<ul>
+			<li>Sports</li>
+			<li>Cooking</li>
+			<li>Parties</li>
+			<li>Traveling</li>
+		</ul>
+	</section>
+
+	<section>
+		<h3>Completed Projects</h3>
+		<ul>
+			<li>Virtual Outfits</li>
+			<li>Reopticskart:Trend Detection System</li>
+		</ul>
+	</section>
+</section>
+<section id="testimonials" class="container">
+	<h2 style="text-align:center">Testimonials</h2>
+	  <table>
+	  <tr>
+	   <td><p style="text-align:center;padding:40px 90px">“You can’t connect the dots looking forward; you can only connect them looking backwards.
+	   So you have to trust that the dots will somehow connect in your future.”</p></td>
+		   
+		 <td>  <p style="text-align:center;padding:40px 90px">“I choose a lazy person to do a hard job. Because a lazy person will find an easy way to do it.”</p></td>
+	   
+	    <td>  <p style="text-align:center;padding:40px 90px">"(Physics is) a good framework for thinking. ... Boil things down to their fundamental truths and reason up from there."</p></td>
+	  </tr>
+	  
+	  <tr>
+	  <td><img src="image1.jpg"  id="frd" alt="image1" ></td>
+	  <td><img src="image3.jpg" id="frd"></td>
+	  <td><img src="image2.jpg" id="frd"></td>
+	  </tr>
+	  
+	  <tr>
+	  <td> <label>Satish R</label></td>
+	  <td><label>Yuktha PP</label></td>
+	  <td><label>Pawan DB</label></td>
+	  </tr>
+	  
+	  <tr>
+	  <td><label>Data Analysts,Kendryl IBM</label></td>
+	  <td><label>Developer,Spektra System</label></td>
+	  <td><label>Data Analysts,Kendryl IBM</label></td>
+	  </tr>
+	</table>
+</section>
+	<section id="contact">
+		<h3>Contact Information</h3>
+		<p>Email: Ayan@gmail.com</p>
+		<p>Phone: 808-877-9945</p>
+	</section>
+
+	<footer>
+		<p>&copy; 2023 Ayan. All rights reserved.</p>
+	</footer>
+</body>
+</html>

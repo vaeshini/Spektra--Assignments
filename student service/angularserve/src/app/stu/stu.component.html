@@ -1,0 +1,17 @@
+<button (click)="DisplayStudent()">DisplayStudent</button>
+<table *ngIf="students && students.length">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>ID</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let student of students">
+        <td>{{student.name}}</td>
+        <td>{{student.id}}</td>
+        <td>{{student.email}}</td>
+    </tr>
+    </tbody>
+</table>
